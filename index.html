@@ -5,183 +5,163 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <nav class="mobil-nav">
-        <ul class="mobil-nav__items">
-          <li class="mobil-nav__item-general">
-            <div class="mobil-nav__item-general mobil-nav__item-general--active"></div>
+    <header class="header">
+      <nav class="main-menu">
+        <ul class="menu-items">
+          <li class="menu-items__item">
+            <a href="#" class="menu-items__link">Главная</a>
           </li>
-          <li class="mobil-nav__item-gallery">
+          <li class="menu-items__item">
+            <a href="#" class="menu-items__link">Фото и видео</a>
           </li>
-          <li class="mobil-nav__item-review">
+          <li class="menu-items__item">
+            <a href="#" class="menu-items__link">Форма отзыва</a>
           </li>
-          <li class="mobil-nav__item-about"></li>
+          <li class="menu-items__item">
+            <a href="#" class="menu-items__link">HTML Academy</a>
+          </li>
         </ul>
-    </nav>
-
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="http://placehold.it/105x85" alt="">
-      </div>
-      <nav class="burger-button">
-        <div class="burger-button__icon">
-          <img src="http://placehold.it/23x24" alt="">
+        <div class="top-menu">
+          <div class="top-menu__logo"></div>
+          <div class="top-menu__button top-menu__button--hamburger"></div>
+          <div class="top-menu__button top-menu__button--cross top-menu__button--hidden"></div>
         </div>
       </nav>
-      <div class="page-header__logo-welcome">
-        <img src="http://placehold.it/320x380" alt="">
-      </div>
+      <div class="header-image"></div>
+      <h1 class="header-title">
+        Седона - небольшой городок в Аризоне, заслуживающий большего!
+      </h1>
     </header>
 
-    <div class="review-box-reasons">
-      <h1 class="review-box-reasons__review-title">
-        Седона - небольшой<br>
-        городок в Аризоне,<br>
-        заслуживающий<br>
-        большего!
-      </h1>
-      <div class="review-box-reasons__review-text">
-        Рассмотрим 5 причин, по которым<br>
-        Седона круче чем Гранд Каньон!
-      </div>
-    </div>
+    <main>
+      <section class="reasons">
+        <h2 class="reasons__title">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</h2>
+        <ul class="reason-items">
+          <li class="reason-item reason-item--opened">
+            <div class="reason-header">
+              <h2 class="reason-header__title">Настоящий городок</h2>
+              <div class="reason-header__number">-1-</div>
+              <div class="reason-header__description">
+                Седона не аттракцион для туристов там течет своя жизнь.
+              </div>
+            </div>
+            <div class="reason-image">
+              <img src="http://placehold.it/320x260" alt="">
+            </div>
+            <ul class="reason-details">
+              <li class="reason-details__item reason-details__item--accomodation">
+                <h3 class="reason-details__title">
+                  Жилье
+                </h3>
+                <div class="reason-details__description">
+                  Рекомендуем пожить в настоящем мотеле все как в кино!
+                </div>
+              </li>
+              <li class="reason-details__item reason-details__item--gifts">
+                <h3 class="reason-details__title">
+                  Сувениры
+                </h3>
+                <div class="reason-details__description">
+                  Не только китайского, но и местного производства!
+                </div>
+              </li>
+              <li class="reason-details__item reason-details__item--food">
+                <h3 class="reason-details__title">
+                  Еда
+                </h3>
+                <div class="reason-details__description">
+                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </div>
+              </li>
+            </ul>
+          </li>
 
-    <div class="review-box-reason1">
-      <h1 class="review-box-reason1__title">
-        Настоящий городок
-      </h1>
-      <div class="review-box-reason1__number">
-        -1-
-      </div>
-      <div class="review-box-reason1__review-text-reason1">
-        Седона не аттракцион для туристов<br>
-        там течет своя жизнь.
-      </div>
-    </div>
+          <li class="reason-item reason-item--opened">
+            <div class="reason-header">
+              <h2 class="reason-header__title">
+                Там есть мост дьявола
+              </h2>
+              <div class="reason-header__number">-2-</div>
+              <div class="reason-header__description">
+                Да, по нему можно пройти! если вы конечно осмелитесь!
+              </div>
+            </div>
+            <div class="reason-image">
+              <img src="http://placehold.it/320x260" alt="">
+            </div>
+          </li>
 
-    <div class="image">
-      <img src="http://placehold.it/320x260" alt="">
-    </div>
+          <li class="reason-item">
+            <div class="reason-header">
+              <h2 class="reason-header__title">
+                Небольшая площадь
+              </h2>
+              <div class="reason-header__number">-3-</div>
+              <div class="reason-header__description">
+                Все достопримечательности находятся очень близко
+              </div>
+            </div>
+          </li>
 
-    <div class="recommendation-hotel">
-      <div class="recommendation-hotel__icon">
-        <img src="http://placehold.it/38x38" alt="">
-      </div>
-      <div class="recommendation-hotel__text">
-        Рекомендуем пожить в<br>
-        настоящем мотеле<br>
-        все как в кино!
-      </div>
-    </div>
+          <li class="reason-item">
+            <div class="reason-header">
+              <h2 class="reason-header__title">
+                Красивая дорога
+              </h2>
+              <div class="reason-header__number">-4-</div>
+              <div class="reason-header__description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </div>
+            </div>
+          </li>
 
-    <div class="recommendation-gifts">
-      <div class="recommendation-gifts__icon">
-        <img src="http://placehold.it/38x38" alt="">
-      </div>
-      <div class="recommendation-gifts__text">
-        Рекомендуем пожить в<br>
-        настоящем мотеле<br>
-        все как в кино!
-      </div>
-    </div>
+          <li class="reason-item">
+            <div class="reason-header">
+              <h2 class="reason-header__title">
+                Мало туристов
+              </h2>
+              <div class="reason-header__number">-5-</div>
+              <div class="reason-header__description">
+                Большинство едет в Град Каньон и толпится там
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <div class="recommendation-food">
-      <div class="recommendation-food__icon">
-        <img src="http://placehold.it/38x38" alt="">
-      </div>
-      <div class="recommendation-food__text">
-        Рекомендуем пожить в<br>
-        настоящем мотеле<br>
-        все как в кино!
-      </div>
-    </div>
+      <section class="booking">
+        <h2 class="booking__title">
+          Заинтересовались?
+        </h2>
+        <div class="booking__details">
+          Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
+        </div>
+        <button class="booking_button" type="submit">
+          Найти гостиницу
+        </button>
+      </section>
 
-    <div class="review-box-reason2">
-      <h1 class="review-box-reason2__title">
-        Там есть мост дьявола
-      </h1>
-      <div class="review-box-reason2__number">
-        -2-
-      </div>
-      <div class="review-box-reason2__review-text-reason1">
-        Да, по нему можно пройти! если вы конечно<br>
-        осмелитесь!
-      </div>
-    </div>
+      <section class="map">
+        <img src="http://placehold.it/320x350" alt="карта">
+      </section>
+    </main>
 
-    <div class="image">
-      <img src="http://placehold.it/320x260" alt="">
-    </div>
+    <footer class="footer">
+      <h2 class="footer__title">#visitsedona</h2>
+      <ul class="footer__social-links-items">
+        <li class="footer__social-link-item">
+          <a href="#" class="footer__social-link footer__social-link--twitter"></a>
+        </li>
 
-    <div class="review-box-reason3">
-      <h1 class="review-box-reason3__title">
-        Небольшая площадь
-      </h1>
-      <div class="review-box-reason3__number">
-        -3-
-      </div>
-      <div class="review-box-reason3__review-text-reason3">
-        Все достопримечательности находятся очень<br>
-        близко
-      </div>
-    </div>
-    <div class="review-box-reason4">
-      <h1 class="review-box-reason4__title">
-        Красивая дорога
-      </h1>
-      <div class="review-box-reason4__number">
-        -4-
-      </div>
-      <div class="review-box-reason4__review-text-reason4">
-        Ехать в Седону из Лас-Вегаса совсем не<br>
-        скучно!
-      </div>
-    </div>
-
-    <div class="review-box-reason5">
-      <h1 class="review-box-reason5__title">
-        Мало туристов
-      </h1>
-      <div class="review-box-reason5__number">
-        -5-
-      </div>
-      <div class="review-box-reason5__review-text-reason5">
-        Большинство едет в Град Каньон и толпится<br>
-        там
-      </div>
-    </div>
-
-    <div class="booking">
-      <h1 class="booking__title">
-        Заинтересовались?
-      </h1>
-      <div class="booking__text">
-        Укажите предполагаемые даты<br>
-        поездки и мы покажем вам лучшие<br>
-        предложения гостиниц в Седоне
-      </div>
-      <div class="booking__button">
-        <input type="button" value="найти гостиницу">
-      </div>
-    </div>
-
-    <div class="map">
-      <img src="http://placehold.it/320x350" alt="">
-    </div>
-
-    <footer class="page-footer">
-      <a class="page-footer__insta-link" href="#">#visitsedona</a>
-      <div class="page-footer__socials">
-        <input class="page-footer page-footer__socials page-footer__socials__twitter"
-        type="image" src="http://placehold.it/48x48" alt="twitter">
-        <input class="page-footer page-footer__socials page-footer__socials__facebook"
-        type="image" src="http://placehold.it/48x48" alt="facebook">
-        <input class="page-footer page-footer__socials page-footer__socials__youtube"
-        type="image" src="http://placehold.it/48x48" alt="youtube">
-      </div>
-      <a class="page-footer_copyright" href="#">
-        Разработано
-        <img src="http://placehold.it/29x35" alt="">
-      </a>
+        <li class="footer__social-link-item">
+          <a href="#" class="footer__social-link footer__social-link--facebook"></a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="#" class="footer__social-link footer__social-link--youtube"></a>
+        </li>
+      </ul>
+      <a href="#" class="footer__copyright">разработано</a>
     </footer>
-</body>
+
+  </body>
 </html>
