@@ -94,20 +94,20 @@
 
           <div class="impression__item">
             <label class="impression__label" for="positive">Скорее позитивно</label>
-            <input class="impression__radio impression__radio--on" type="radio" name="impression"
-             value="positive" id="positive">
+            <input class="impression__radio" type="radio" name="impression"
+              value="positive" id="positive">
           </div>
 
           <div class="impression__item">
             <label class="impression__label" for="negative">Скорее негативно</label>
-            <input class="impression__radio impression__radio--on" type="radio" name="impression"
-             value="negative" id="negative">
+            <input class="impression__radio" type="radio" name="impression"
+              value="negative" id="negative">
           </div>
 
           <div class="impression__item">
             <label class="impression__label" for="difficult">Затрудняюсь ответить</label>
-            <input class="impression__radio impression__radio--on" type="radio" name="impression"
-             value="difficult" id="difficult">
+            <input class="impression__radio" type="radio" name="impression"
+              value="difficult" id="difficult">
           </div>
         </fieldset>
 
@@ -116,7 +116,7 @@
 
           <div class="attractions__item">
             <label class="attractions__label" for="bridge">Мост дьявола</label>
-            <input class="attractions__chekсbox" type="checkbox" id="bridge">
+            <input class="attractions__cheсkbox" type="checkbox" id="bridge">
           </div>
 
           <div class="attractions__item">
@@ -141,29 +141,29 @@
           ></textarea>
         </div>
 
-        <button class="review-form__send-form-button" type="submit" name="send-form-button" >
+        <button class="review-form__submit" type="submit" name="submit" >
           Отправить отзыв
         </button>
 
       </form>
 
-      <div class="failure-popup">
-        <h3 class="failure-popup__title">Что-то пошло не так!</h3>
-        <p class="failure-popup__text">
+      <div class="popup">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="failure-popup__ok-button" type="submit" name="ok-button" >
+        <button class="popup__button popup__button--ok" type="submit" name="ok-button" >
           Ok
         </button>
       </div>
 
-      <div class="success-popup">
-        <h3 class="success-popup__title">Ваш отзыв отправлен</h3>
-        <p class="success-popup__text">
+      <div class="popup">
+        <h3 class="popup__title">Ваш отзыв отправлен</h3>
+        <p class="popup__text">
           Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
           мы опубликуем его на сайте.
         </p>
-        <button class="success-popup__close-button" type="submit" name="close-button" >
+        <button class="popup__button popup__button--close" type="submit" name="close-button" >
           Закрыть окно
         </button>
       </div>
