@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="header">
+
+      <nav class="header__nav page-nav">
+        <ul class="page-nav__items">
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">Главная</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">Фото и видео</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a class="page-nav__link">Форма отзыва</a>
+          </li>
+
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+
+        <div class="header__panel">
+          <h1 class="header__logo">
+            <a class="header__logo-link" href="#">Sedona</a>
+          </h1>
+          <button class="header__menu-button header__menu-button--hamburger"></button>
+        </div>
+      </nav>
+
+      <div class="header__image header__image--extended"></div>
+
+    </header>
+
+    <main>
+
+      <form class="review-form">
+
+        <header class="review-form__intro">
+          <h2 class="review-form__title">Оставьте свой отзыв</h2>
+          <div class="review-form__desc">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же
+            о посещенных вами достопримечательностях
+          </div>
+        </header>
+
+        <fieldset class="review-form__introduce introduce">
+          <h3 class="introduce__title">Представьтесь, пожалуйста:</h3>
+
+          <div class="introduce__item">
+            <label class="introduce__label introduce__label--name" for="name">Имя:</label>
+            <input class="introduce__input introduce__input--name" type="text" id="name">
+          </div>
+
+          <div class="introduce__item">
+            <label class="introduce__label introduce__label--surename" for="surname">Фамилия:</label>
+            <input class="introduce__input introduce__input--surename" type="text" id="surname">
+          </div>
+
+          <div class="introduce__item">
+            <label class="introduce__label introduce__label--middle-name" for="middle-name">Отчество:</label>
+            <input class="introduce__input introduce__input--middle-name " type="text" id="middle-name">
+          </div>
+        </fieldset>
+
+
+        <fieldset class="review-form__contacts contacts">
+          <h3 class="contacts__title">Контактная информация:</h3>
+
+          <div class="contacts__item">
+            <label class="contacts__label contacts__label--phone" for="phone">Контактный телефон:</label>
+            <input class="contacts__input contacts__input--phone" type="tel"
+            pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" id="phone" placeholder="Введите телефон">
+            <span class="contacts__input-error">Ошибка, перепроверьте номер</span>
+          </div>
+
+          <div class="contacts__item">
+            <label class="contacts__label contacts__label--phone" for="email">Электронная почта:</label>
+            <input class="contacts__input contacts__input--email" type="email"
+              id="email" placeholder="Введите e-mail">
+          </div>
+        </fieldset>
+
+
+        <fieldset class="review-form__impression impression">
+          <h3 class="impression__title">Ваше общее впечатление:</h3>
+
+          <div class="impression__item">
+            <label class="impression__label" for="positive">Скорее позитивно</label>
+            <input class="impression__radio" type="radio" name="impression"
+              value="positive" id="positive">
+          </div>
+
+          <div class="impression__item">
+            <label class="impression__label" for="negative">Скорее негативно</label>
+            <input class="impression__radio" type="radio" name="impression"
+              value="negative" id="negative">
+          </div>
+
+          <div class="impression__item">
+            <label class="impression__label" for="difficult">Затрудняюсь ответить</label>
+            <input class="impression__radio" type="radio" name="impression"
+              value="difficult" id="difficult">
+          </div>
+        </fieldset>
+
+        <fieldset class="review-form__attractions attractions">
+          <h3 class="attractions__title">Посещенные достопримечательности:</h3>
+
+          <div class="attractions__item">
+            <label class="attractions__label" for="bridge">Мост дьявола</label>
+            <input class="attractions__cheсkbox" type="checkbox" id="bridge">
+          </div>
+
+          <div class="attractions__item">
+            <label class="attractions__label" for="park">Слайд-парк</label>
+            <input class="attractions__cheсkbox" type="checkbox" id="park">
+          </div>
+
+          <div class="attractions__item">
+            <label class="attractions__label" for="mountain">Гора-Колокол</label>
+            <input class="attractions__cheсkbox" type="checkbox" id="mountain">
+          </div>
+
+          <div class="attractions__item">
+            <label class="attractions__label" for="rocks">Красные скалы</label>
+            <input class="attractions__cheсkbox" type="checkbox" id="rocks">
+          </div>
+        </fieldset>
+
+        <div class="review-form__emotions emotions">
+          <h3 class="emotions__title">Опишите свои эмоции:</h3>
+          <textarea class="emotions__desc" rows="3" placeholder="Опишите все свои восторги"
+          ></textarea>
+        </div>
+
+        <button class="review-form__submit" type="submit" name="submit" >
+          Отправить отзыв
+        </button>
+
+      </form>
+
+      <div class="popup">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="popup__button popup__button--ok" type="submit" name="ok-button" >
+          Ok
+        </button>
+      </div>
+
+      <div class="popup">
+        <h3 class="popup__title">Ваш отзыв отправлен</h3>
+        <p class="popup__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+          мы опубликуем его на сайте.
+        </p>
+        <button class="popup__button popup__button--close" type="submit" name="close-button" >
+          Закрыть окно
+        </button>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+
+      <h2 class="footer__title">#visitsedona</h2>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--twitter">twitter</a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--facebook">facebook</a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link--youtube">youtube</a>
+        </li>
+      </ul>
+      <a href="#" class="footer__copyright">разработано HTML Academy</a>
+
+    </footer>
+
+  </body>
+</html>
