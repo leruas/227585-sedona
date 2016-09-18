@@ -1,0 +1,45 @@
+.video-controls__range {
+  height: 45px;
+  padding: 0 $offset-single;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  line-height: 52px;
+}
+
+.video-controls__range-input {
+  width: 100%;
+}
+
+.video-controls__buttons {
+  height: 65px;
+  padding: 0 $offset-single;
+
+  background-color: #f2f2f2;
+
+  line-height: 76px;
+}
+
+.video-controls__button {
+  display: inline;
+
+  height: 20px;
+  padding: 0;
+
+  border: 0;
+  background-color: transparent;
+
+  & img {
+    display: inline-block;
+  }
+}
+
+.video-controls__button--subtitles {
+  float: right;
+
+  margin-right: $offset-single;
+}
+
+.video-controls__button--fullscreen {
+  float: right;
+}

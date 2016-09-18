@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+}
+
+.footer__title {
+  margin: $offset-double;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: $text-size-big;
+}
+
+.footer__copyright {
+  display: inline-block;
+
+  width: 130px;
+  height: 35px;
+  margin: $offset-double auto;
+
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $color-black;
+  background: url("/img/logo-htmlacademy.svg") no-repeat 100% 50%;
+
+  line-height: 35px;
+
+  & span {
+    display: none;
+  }
+}

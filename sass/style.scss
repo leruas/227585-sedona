@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+@import "caption";
+
+@import "header";
+@import "page-nav";
+@import "reasons";
+@import "reason";
+@import "footer";
+@import "socials";
+@import "details";
+@import "booking";
+@import "map";
+
+@import "review-form";
+@import "fieldset";
+@import "popup";
+
+@import "photo";
+@import "presentation";
+@import "video";
+@import "video-controls";
+
+body {
+  min-width: 320px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: $text-size-small;
+}

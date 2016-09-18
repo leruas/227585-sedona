@@ -1,0 +1,33 @@
+.socials {
+  text-align: center;
+
+  @include drop-list-style();
+}
+
+.socials__item {
+  display: inline-block;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: $color-blue;
+}
+
+.socials__link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.socials__link--twitter {
+  @include socials-link-bg(twitter);
+}
+
+.socials__link--facebook {
+  @include socials-link-bg(facebook);
+}
+
+.socials__link--youtube {
+  @include socials-link-bg(youtube);
+}

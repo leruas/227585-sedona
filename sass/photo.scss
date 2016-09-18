@@ -1,0 +1,34 @@
+.photo {
+  padding: $offset-single;
+
+  border-top: 1px solid $color-light-grey;
+}
+
+.photo__img {
+  margin-bottom: $offset-single;
+}
+
+.photo__title {
+  margin-bottom: 14px;
+
+  text-transform: uppercase;
+}
+
+.photo__author {
+  margin-bottom: 14px;
+
+  color: $color-dark-grey;
+}
+
+.photo__likes {
+  height: 20px;
+
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.photo__like-icon {
+  display: inline;
+
+  margin-right: $offset-half;
+}

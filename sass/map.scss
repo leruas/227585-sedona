@@ -1,0 +1,12 @@
+.map__title {
+  display: none;
+}
+
+.map__area {
+  width: 320px;
+  height: 350px;
+  margin: 50px auto;
+
+  background: url("/img/bg-map-mobile@1x.jpg") no-repeat 50% 50%;
+  background-size: contain;
+}

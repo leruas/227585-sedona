@@ -1,0 +1,29 @@
+.reasons__slogan {
+  width: 256px;
+  margin: $offset-double auto;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: $text-size-medium;
+}
+
+.reasons__intro {
+  width: 256px;
+  margin: $offset-double auto;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-dark-grey;
+
+  font-size: $text-size-small;
+}
+
+.reasons__list {
+  @include drop-list-style();
+}
+
+.reasons__item {
+  display: block;
+}
