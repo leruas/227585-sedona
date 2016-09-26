@@ -1,0 +1,10 @@
+.video__controls {
+  margin: -45px $offset-single 0 $offset-single;
+}
+
+.video__preview {
+  height: 201px;
+
+  background: url(/img/video-mobile@1x.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}

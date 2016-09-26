@@ -1,0 +1,48 @@
+.reason__header {
+  display: block;
+
+  width: 100%; // TODO: что бы изменить ширину нижнего бордера нужно этому блоку выставить ширину 280пкс
+  margin: 0 auto;
+  padding-top: 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $color-medium-grey;
+  background-color: $color-light-grey;
+
+  font-size: $text-size-small;
+}
+
+.reason__header--featured {
+  color: $color-white;
+  background: $color-blue;
+}
+
+.reason__title {
+  margin: 0 auto $offset-single auto;
+}
+
+.reason__number {
+  margin-bottom: $offset-single;
+}
+
+.reason__desc {
+  width: 256px;
+  margin: 0 auto $offset-double auto;
+}
+
+.reason__img {
+  @include reason-img(city);
+}
+
+.reason__img--bridge {
+  @include reason-img(bridge);
+}
+
+.reason__details {
+  width: 260px;
+  // margin: $offset-double auto;
+
+  @include drop-list-style();
+}

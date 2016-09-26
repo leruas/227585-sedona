@@ -1,0 +1,48 @@
+@mixin drop-list-style() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin details-title-bg($type) {
+  background: url("/img/icon-#{$type}.svg") no-repeat 0 50%;
+  background-size: contain;
+}
+
+@mixin socials-link-bg($name) {
+  background: url("/img/icon-#{$name}.svg") no-repeat 50% 50%;
+}
+
+@mixin reason-img($type) {
+  width: 100%;
+  height: 260px;
+
+  background: url("/img/photo-#{$type}@1x.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+@mixin form-input-text() {
+  color: $color-black;
+
+  font-size: $text-size-medium;
+  font-weight: bold;
+}
+
+@mixin button-styles() {
+  display: inline-block;
+
+  height: 58px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $color-white;
+  border: 0;
+  background-color: $color-blue;
+
+  font-size: $text-size-big;
+  font-weight: bold;
+  line-height: 58px;
+}

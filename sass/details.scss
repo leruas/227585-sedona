@@ -1,0 +1,36 @@
+.details {
+  padding: $offset-single;
+}
+
+.details__item {
+  margin-bottom: $offset-single;
+}
+
+.details__title {
+  height: 36px;
+  margin: 10px 0;
+  padding-left: 48px;
+
+  text-transform: uppercase;
+
+  font-size: $text-size-medium;
+  line-height: 36px;
+}
+
+.details__title--accomodation {
+  @include details-title-bg(house);
+}
+
+.details__title--gifts {
+  @include details-title-bg(gift);
+}
+
+.details__title--food {
+  @include details-title-bg(burger);
+}
+
+.details__desc {
+  padding-left: 48px;
+
+  text-transform: uppercase;
+}

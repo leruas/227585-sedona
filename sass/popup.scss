@@ -1,0 +1,26 @@
+.popup {
+  display: none;
+
+  text-align: center;
+}
+
+.popup__title {
+  margin: $offset-double 0;
+
+  text-transform: uppercase;
+
+  font-size: $text-size-medium;
+}
+
+.popup__text {
+  text-transform: uppercase;
+
+  color: $color-dark-grey;
+}
+
+.popup__button {
+  margin: $offset-single 0;
+  padding: 0 $offset-triple;
+
+  @include button-styles();
+}

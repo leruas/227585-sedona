@@ -1,0 +1,14 @@
+.presentation {
+  border-top: 1px solid $color-light-grey;
+}
+
+.presentation__intro {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.presentation__title {
+  margin: $offset-double 0;
+
+  font-size: $text-size-medium;
+}
