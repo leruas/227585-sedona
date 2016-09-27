@@ -1,0 +1,38 @@
+.booking {
+  padding: $offset-single;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__title {
+  margin: $offset-single 0;
+
+  text-align: center;
+
+  font-size: $text-size-big;
+}
+
+.booking__details {
+  margin: $offset-double auto;
+
+  line-height: 24px;
+}
+
+.booking__button {
+  width: 100%;
+  margin: 0 0 $offset-single 0;
+
+  @include button-styles();
+}
+
+@media (min-width: 768px) {
+  .booking__title {
+    font-size: 30px;
+  }
+
+  .booking__details,
+  .booking__button {
+    width: 458px;
+  }
+}

@@ -36,6 +36,7 @@
 
   background: url("/img/bg-back-mobile@1x.jpg") no-repeat;
   background-position: 50% 100%;
+  background-size: cover;
 }
 
 .header__image-text {
@@ -57,5 +58,24 @@
     padding-top: 176px;
 
     background-image: url("/img/text-sedona-index.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .header__panel {
+    display: none;
+  }
+
+  .header__logo-image {
+    position: inherit;
+  }
+
+  .header__image {
+    height: 520px;
+  }
+
+  .header__caption {
+    width: 490px;
+    margin: 0 auto;
   }
 }

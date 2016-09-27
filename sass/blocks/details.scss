@@ -34,3 +34,18 @@
 
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .details {
+    overflow: hidden;
+
+    width: 100%;
+    padding: 0;
+  }
+
+  .details__item {
+    float: left;
+
+    width: 33.3%;
+  }
+}

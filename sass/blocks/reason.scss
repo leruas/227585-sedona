@@ -28,7 +28,6 @@
 }
 
 .reason__desc {
-  width: 256px;
   margin: 0 auto $offset-double auto;
 }
 
@@ -42,7 +41,32 @@
 
 .reason__details {
   width: 260px;
-  // margin: $offset-double auto;
 
   @include drop-list-style();
+}
+
+@media (min-width: 768px) {
+  .reason__header {
+    box-sizing: border-box;
+    height: 256px;
+
+    border: 0;
+  }
+
+  .reason__header--featured {
+    float: left;
+
+    width: 35%;
+  }
+
+  .reason__img {
+    float: left;
+
+    width: 65%;
+    height: 256px;
+  }
+
+  .reason__details {
+    height: 256px;
+  }
 }

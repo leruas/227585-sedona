@@ -12,3 +12,9 @@
 
   font-size: $text-size-medium;
 }
+
+@media (min-width: 768px) {
+  .presentation {
+    border: 0;
+  }
+}
