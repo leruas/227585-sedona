@@ -1,26 +1,28 @@
 @import "variables";
 @import "mixins";
 
-@import "caption";
+@import "normalize";
 
-@import "header";
-@import "page-nav";
-@import "reasons";
-@import "reason";
-@import "footer";
-@import "socials";
-@import "details";
-@import "booking";
-@import "map";
+@import "blocks/caption";
 
-@import "review-form";
-@import "fieldset";
-@import "popup";
+@import "blocks/header";
+@import "blocks/page-nav";
+@import "blocks/reasons";
+@import "blocks/reason";
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/details";
+@import "blocks/booking";
+@import "blocks/map";
 
-@import "photo";
-@import "presentation";
-@import "video";
-@import "video-controls";
+@import "blocks/review-form";
+@import "blocks/popup";
+
+@import "blocks/gallery";
+@import "blocks/photo";
+@import "blocks/presentation";
+@import "blocks/video";
+@import "blocks/video-controls";
 
 body {
   min-width: 320px;

@@ -8,3 +8,14 @@
   background: url(/img/video-mobile@1x.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+  .video__controls {
+    height: 94px;
+    margin-top: -94px;
+  }
+
+  .video__preview {
+    height: 500px;
+  }
+}

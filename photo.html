@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -21,6 +20,10 @@
           </li>
 
           <li class="page-nav__item">
+            <img src="/img/logo-sedona-mobile.svg" class="header__logo-image">
+          </li>
+
+          <li class="page-nav__item">
             <a href="form.html" class="page-nav__link">Форма отзыва</a>
           </li>
 
@@ -33,7 +36,6 @@
 
         <div class="header__panel">
           <a class="header__logo-link" href="/">
-            <h1 class="header__logo">Sedona</h1>
             <img src="/img/logo-sedona-mobile.svg" class="header__logo-image">
           </a>
           <button class="header__menu-button header__menu-button--hamburger"></button>
@@ -44,29 +46,28 @@
         <div class="header__image-text"></div>
       </div>
 
+      <div class="header__caption caption">
+        <h1 class="caption__title">Фото и видео</h1>
+        <div class="caption__desc">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут
+          вам забыть о политике и экономике.
+        </div>
+      </div>
+
     </header>
 
     <main>
 
       <section class="gallery">
 
-        <header class="caption">
-          <h2 class="caption__title">Фото и видео</h2>
-          <div class="caption__desc">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут
-            вам забыть о политике и экономике.
-          </div>
-        </header>
-
         <article class="photo">
           <a href="#" class="photo__img">
             <img src="/img/photo-1-mobile@1x.jpg" alt="">
           </a>
-          <h3 class="photo__title">Неродные просторы</h3>
-          <div class="photo__author">Автор фото: Борис</div>
-          <div class="photo__likes">
-            <img src="/img/icon-like.svg" class="photo__like-icon">
-            1350
+          <div class="photo__info">
+            <h3 class="photo__title">Неродные просторы</h3>
+            <div class="photo__author">Автор фото: Борис</div>
+            <div class="photo__likes">1350</div>
           </div>
         </article>
 
@@ -74,11 +75,10 @@
           <a href="#" class="photo__img">
             <img src="/img/photo-2-mobile@1x.jpg" alt="">
           </a>
-          <h3 class="photo__title">Местная растительность</h3>
-          <div class="photo__author">Автор фото: Сергей</div>
-          <div class="photo__likes">
-            <img src="/img/icon-like.svg" class="photo__like-icon">
-            143
+          <div class="photo__info">
+            <h3 class="photo__title">Местная растительность</h3>
+            <div class="photo__author">Автор фото: Сергей</div>
+            <div class="photo__likes">143</div>
           </div>
         </article>
 
@@ -86,11 +86,10 @@
           <a href="#" class="photo__img">
             <img src="/img/photo-3-mobile@1x.jpg" alt="">
           </a>
-          <h3 class="photo__title">Дорога на север</h3>
-          <div class="photo__author">Автор фото: Петр</div>
-          <div class="photo__likes">
-            <img src="/img/icon-like.svg" class="photo__like-icon">
-            96
+          <div class="photo__info">
+            <h3 class="photo__title">Дорога на север</h3>
+            <div class="photo__author">Автор фото: Петр</div>
+            <div class="photo__likes">96</div>
           </div>
         </article>
 
@@ -98,11 +97,10 @@
           <a href="#" class="photo__img">
             <img src="/img/photo-4-mobile@1x.jpg" alt="">
           </a>
-          <h3 class="photo__title">Мост дьявола</h3>
-          <div class="photo__author">Автор фото: Антон</div>
-          <div class="photo__likes">
-            <img src="/img/icon-like.svg" class="photo__like-icon">
-            254
+          <div class="photo__info">
+            <h3 class="photo__title">Мост дьявола</h3>
+            <div class="photo__author">Автор фото: Антон</div>
+            <div class="photo__likes">254</div>
           </div>
         </article>
 
@@ -147,17 +145,17 @@
       <h2 class="footer__title">#visitsedona</h2>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--twitter" title="twitter"></a>
+          <a href="#" class="socials__link socials__link--twitter" title="Twitter">Twitter</a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--facebook" title="facebook"></a>
+          <a href="#" class="socials__link socials__link--facebook" title="Facebook">Facebook</a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--youtube" title="youtube"></a>
+          <a href="#" class="socials__link socials__link--youtube" title="YouTube">YouTube</a>
         </li>
       </ul>
       <a href="#" class="footer__copyright" title="Разработано HTML Academy">
-        Разработано <span>HTML Academy</span>
+        Разработано <span class="footer__academy-logo">HTML Academy</span>
       </a>
 
     </footer>

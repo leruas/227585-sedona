@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -21,6 +20,10 @@
           </li>
 
           <li class="page-nav__item">
+            <img src="/img/logo-sedona-mobile.svg" class="header__logo-image">
+          </li>
+
+          <li class="page-nav__item">
             <a href="form.html" class="page-nav__link">Форма отзыва</a>
           </li>
 
@@ -32,7 +35,6 @@
         </ul>
 
         <div class="header__panel">
-          <h1 class="header__logo">Sedona</h1>
           <img src="/img/logo-sedona-mobile.svg" class="header__logo-image">
           <button class="header__menu-button header__menu-button--hamburger"></button>
         </div>
@@ -42,20 +44,20 @@
         <div class="header__image-text"></div>
       </div>
 
+      <div class="header__caption caption">
+        <h1 class="caption__title">
+          Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <div class="caption__desc">
+          Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
+        </div>
+      </div>
+
     </header>
 
     <main>
 
       <section class="reasons">
-
-        <header class="caption">
-          <h2 class="caption__title">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
-          </h2>
-          <div class="caption__desc">
-            Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
-          </div>
-        </header>
 
         <ul class="reasons__list">
 
@@ -103,8 +105,8 @@
               <div class="reason__desc">
                 Да, по нему можно пройти! если вы конечно осмелитесь!
               </div>
-              <div class="reason__img reason__img--bridge"></div>
             </header>
+            <div class="reason__img reason__img--bridge"></div>
           </li>
 
           <li class="reasons__item reason">
@@ -141,24 +143,17 @@
       </section>
 
       <section class="booking">
-        <h2 class="booking__title">
-          Заинтересовались?
-        </h2>
+        <h2 class="booking__title">Заинтересовались?</h2>
         <div class="booking__details">
           Укажите предполагаемые даты поездки и мы покажем вам
           лучшие предложения гостиниц в Седоне
         </div>
-        <a class="booking__button" href="#">
-          Найти гостиницу
-        </a>
-
+        <a class="booking__button" href="#">Найти гостиницу</a>
       </section>
 
       <section class="map">
-
         <h2 class="map__title">Карта</h2>
         <div class="map__area"></div>
-
       </section>
 
     </main>
@@ -168,17 +163,17 @@
       <h2 class="footer__title">#visitsedona</h2>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--twitter" title="twitter"></a>
+          <a href="#" class="socials__link socials__link--twitter" title="Twitter">Twitter</a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--facebook" title="facebook"></a>
+          <a href="#" class="socials__link socials__link--facebook" title="Facebook">Facebook</a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link socials__link--youtube" title="youtube"></a>
+          <a href="#" class="socials__link socials__link--youtube" title="YouTube">YouTube</a>
         </li>
       </ul>
       <a href="#" class="footer__copyright" title="Разработано HTML Academy">
-        Разработано <span>HTML Academy</span>
+        Разработано <span class="footer__academy-logo">HTML Academy</span>
       </a>
 
     </footer>

@@ -27,3 +27,19 @@
 .reasons__item {
   display: block;
 }
+
+@media (min-width: 768px) {
+  .reasons {
+    overflow: hidden;
+  }
+
+  .reasons__item {
+    float: left;
+
+    width: 33.3%;
+
+    &:nth-child(1), &:nth-child(2) {
+      width: 100%;
+    }
+  }
+}
