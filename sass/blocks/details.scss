@@ -1,5 +1,9 @@
 .details {
-  padding: $offset-single;
+  height: 330px;
+  padding-top: $offset-single;
+  padding-bottom: $offset-double;
+
+  @include container-fluid();
 }
 
 .details__item {
@@ -7,45 +11,95 @@
 }
 
 .details__title {
-  height: 36px;
   margin: 10px 0;
-  padding-left: 48px;
 
   text-transform: uppercase;
 
   font-size: $text-size-medium;
-  line-height: 36px;
-}
 
-.details__title--accomodation {
-  @include details-title-bg(house);
-}
+  &::before {
+    display: inline-block;
 
-.details__title--gifts {
-  @include details-title-bg(gift);
-}
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
 
-.details__title--food {
-  @include details-title-bg(burger);
+    content: '';
+    vertical-align: middle;
+  }
+
+  &--accomodation::before {
+    @include details-title-bg(house);
+  }
+
+  &--gifts::before {
+    @include details-title-bg(gift);
+  }
+
+  &--food::before {
+    @include details-title-bg(burger);
+  }
 }
 
 .details__desc {
   padding-left: 48px;
 
   text-transform: uppercase;
+
+  line-height: 21px;
 }
 
 @media (min-width: 768px) {
   .details {
-    overflow: hidden;
+    display: flex;
 
     width: 100%;
     padding: 0;
+
+    align-items: center;
   }
 
   .details__item {
-    float: left;
-
     width: 33.3%;
+    margin: 0;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
+
+  .details__title {
+    margin: 0 0 30px 0;
+    padding: 0;
+
+    text-align: center;
+
+    &::before {
+      display: block;
+
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  .details__desc {
+    padding: 0 46px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .details__desc {
+    padding: 0 65px;
   }
 }

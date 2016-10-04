@@ -7,17 +7,14 @@
 .page-nav__item {
   display: block;
 
-  height: 55px;
+  height: 56px;
 
   text-align: center;
 
-  border-bottom: 1px solid #010101;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
-  line-height: 55px;
-}
-
-.page-nav__item:nth-child(3) {
-  display: none;
+  line-height: 56px;
 }
 
 .page-nav__link {
@@ -32,23 +29,19 @@
 
 @media (min-width: 768px) {
   .page-nav__items {
-    height: 55px;
-
-    text-align: center;
+    display: flex;
 
     background: none;
   }
 
   .page-nav__item {
-    display: inline-block;
-
-    vertical-align: top;
+    width: 20%;
 
     border: 0;
   }
 
-  .page-nav__item:nth-child(3) {
-    display: inline-block;
+  .page-nav__item:nth-child(2) {
+    margin-right: auto;
   }
 
   .page-nav__link {

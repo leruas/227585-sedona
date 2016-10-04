@@ -155,27 +155,22 @@
 
 @media (min-width: 768px) {
   .review-form {
-    position: relative;
+    display: flex;
+
+    flex-wrap: wrap;
   }
 
   .review-form__fieldset {
     margin: 0 $offset-triple;
     padding: $offset-double 0;
 
-    &--attractions {
-      .review-form__input-group {
-        float: left;
-
-        width: 50%;
-      }
-    }
-
     &--introduce {
       width: 50%;
       margin: 0;
-      margin-left: 50%;
 
       border: 0;
+
+      order: 2;
 
       .review-form__legend {
         width: auto;
@@ -188,17 +183,30 @@
       }
     }
 
-    &--impressions {
-      position: absolute;
-      top: 0;
-      left: 0;
+    &--contacts {
+      width: 100%;
 
-      width: 50%;
+      order: 3;
+
+      .review-form__fieldset-inner {
+        flex-wrap: wrap;
+      }
+
+      .review-form__input-group {
+        width: 100%;
+      }
+    }
+
+    &--impressions {
+      width: calc(50% - 1px);
       margin: 0;
+      margin-bottom: $offset-double;
       padding-bottom: 0;
 
       border: 0;
       border-right: 1px solid $color-light-grey;
+
+      order: 1;
 
       .review-form__legend {
         width: auto;
@@ -208,6 +216,47 @@
         margin-left: 60px;
       }
     }
+
+    &--attractions {
+      width: 100%;
+
+      order: 4;
+
+      .review-form__fieldset-inner {
+        flex-direction: column;
+
+        height: 180px;
+
+        flex-wrap: wrap;
+        align-content: center;
+      }
+
+      .review-form__input-group {
+        padding: 0 35px;
+      }
+
+      .review-form__label {
+        margin: 0;
+      }
+    }
+
+    &--emotions {
+      width: 100%;
+
+      order: 5;
+    }
+  }
+
+  .review-form__fieldset-inner {
+    display: flex;
+  }
+
+  .review-form__actions {
+    width: 100%;
+
+    order: 6;
+
+    margin-bottom: $offset-double;
   }
 
   .review-form__legend {
@@ -239,10 +288,13 @@
     margin-left: 60px;
   }
 
+  .review-form__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .review-form__annotation {
     display: block;
-    float: right;
-
     margin: 20px 60px 0 0;
 
     text-transform: uppercase;
@@ -255,7 +307,6 @@
 
     &--introduce {
       margin: 0;
-      margin-left: 50%;
 
       .review-form__input-group {
         margin-right: 120px;
@@ -264,8 +315,6 @@
 
     &--contacts {
       .review-form__input-group {
-        float: left;
-
         width: 50%;
         padding-top: 30px;
       }
@@ -296,6 +345,7 @@
 
     &--impressions {
       margin: 0;
+      margin-bottom: 40px;
 
       .review-form__input-group {
         margin-left: 120px;
@@ -303,6 +353,34 @@
     }
 
     &--attractions {
+      .review-form__fieldset-inner {
+        flex-direction: row;
+
+        height: 120px;
+
+        flex-wrap: nowrap;
+
+        .review-form__input-group {
+          padding: 0;
+
+          &:nth-child(1) {
+            order: 1;
+          }
+
+          &:nth-child(2) {
+            order: 3;
+          }
+
+          &:nth-child(3) {
+            order: 2;
+          }
+
+          &:nth-child(4) {
+            order: 4;
+          }
+        }
+      }
+
       .review-form__input-group {
         width: 25%;
       }

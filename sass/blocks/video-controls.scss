@@ -14,7 +14,8 @@
 }
 
 .video-controls__buttons {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 
   height: 60px;
   padding: 0 $offset-single;
@@ -35,20 +36,14 @@
   background-color: transparent;
 
   font: initial;
-}
 
-.video-controls__button--repeat {
-  float: left
+  &:first-child {
+    margin-right: auto;
+  }
 }
 
 .video-controls__button--subtitles {
-  float: right;
-
   margin-right: $offset-single;
-}
-
-.video-controls__button--fullscreen {
-  float: right;
 }
 
 @media (min-width: 768px) {
@@ -61,7 +56,7 @@
     top: 25px;
     left: 40px;
 
-    width: calc(100% - 180px);
+    width: calc(100% - 176px);
   }
 
   .video-controls__buttons {
