@@ -27,6 +27,18 @@
 body {
   min-width: 320px;
 
+  background-color: #f2f2f2;
+
   font-family: "PT Sans", sans-serif;
   font-size: $text-size-small;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow:
+    2px 0 15px 0 rgba(0, 0, 0, 0.1),
+    -2px 0 15px 0 rgba(0, 0, 0, 0.1);
 }

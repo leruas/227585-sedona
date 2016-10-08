@@ -34,7 +34,7 @@
   .review-form__input-tel,
   .review-form__input-email,
   .review-form__textarea {
-    padding: $offset-single;
+    padding: 20px $offset-single;
 
     color: $color-black;
     border: none;
@@ -43,6 +43,17 @@
 
     font-size: $text-size-medium;
     font-weight: bold;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      padding: 16px;
+
+      border: 4px solid #e5e5e5;
+      background-color: #ffffff;
+    }
   }
 
   .review-form__input-tel,
@@ -84,7 +95,7 @@
     }
 
     &:checked + .review-form__label::before {
-      background: url("/img/icon-tick.svg") no-repeat 50% 50%;
+      background: url("/img/icons/icon-tick.svg") no-repeat 50% 50%;
       background-color: $color-light-grey;
     }
   }
@@ -127,11 +138,11 @@
   vertical-align: middle;
 
   &--phone {
-    background: #e6e6e6 url('/img/icon-phone.svg') no-repeat 50% 50%;
+    background: #e6e6e6 url('/img/icons/icon-phone.svg') no-repeat 50% 50%;
   }
 
   &--email {
-    background: #e6e6e6 url('/img/icon-mail.svg') no-repeat 50% 50%;
+    background: #e6e6e6 url('/img/icons/icon-mail.svg') no-repeat 50% 50%;
   }
 }
 
@@ -253,10 +264,9 @@
 
   .review-form__actions {
     width: 100%;
+    margin-bottom: $offset-double;
 
     order: 6;
-
-    margin-bottom: $offset-double;
   }
 
   .review-form__legend {
@@ -290,11 +300,13 @@
 
   .review-form__actions {
     display: flex;
+
     justify-content: space-between;
   }
 
   .review-form__annotation {
     display: block;
+
     margin: 20px 60px 0 0;
 
     text-transform: uppercase;
@@ -304,6 +316,7 @@
 @media (min-width: 1200px) {
   .review-form__fieldset {
     margin: 0 $offset-triple * 2;
+    padding: 27px 0;
 
     &--introduce {
       margin: 0;

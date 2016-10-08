@@ -2,12 +2,15 @@
   background-color: $color-blue;
 
   @include drop-list-style();
+  &--closed {
+    display: none;
+  }
 }
 
 .page-nav__item {
   display: block;
 
-  height: 56px;
+  height: 54px;
 
   text-align: center;
 
@@ -15,9 +18,28 @@
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
   line-height: 56px;
+  &:last-child {
+    box-shadow: inset 0 -2px 10px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    .page-nav__link {
+      color: #94b9d2;
+    }
+  }
 }
 
 .page-nav__link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
   text-decoration: none;
   text-transform: uppercase;
 
@@ -38,6 +60,15 @@
     width: 20%;
 
     border: 0;
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+
   }
 
   .page-nav__item:nth-child(2) {
@@ -46,5 +77,28 @@
 
   .page-nav__link {
     color: $color-black;
+
+    font-size: $text-size-small;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #cacaca;
+    }
+
+  }
+
+  .page-nav__link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #dedad8;
+    }
   }
 }

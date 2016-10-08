@@ -26,8 +26,11 @@
   display: block;
 
   &:first-child {
-    padding-top: $offset-single;
+    margin-top: -9.6875%;
+    padding-top: 12.5%;
+
     background: $color-blue url("/img/bg-triangle.svg") no-repeat 50% 0;
+    background-size: 104% auto;
   }
 }
 
@@ -46,7 +49,9 @@
     }
 
     &:first-child {
+      margin: 0;
       padding: 0;
+
       background: $color-blue;
     }
   }

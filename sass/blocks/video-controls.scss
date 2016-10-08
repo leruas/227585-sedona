@@ -16,8 +16,9 @@
 .video-controls__buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  height: 60px;
+  height: 66px;
   padding: 0 $offset-single;
 
   background-color: #f2f2f2;
@@ -29,7 +30,6 @@
   display: inline-block;
 
   height: 20px;
-  margin-top: $offset-single;
   padding: 0;
 
   border: 0;
@@ -43,7 +43,7 @@
 }
 
 .video-controls__button--subtitles {
-  margin-right: $offset-single;
+  margin-right: 34px;
 }
 
 @media (min-width: 768px) {
