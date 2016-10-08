@@ -1,8 +1,11 @@
 .booking {
-  padding: $offset-single;
+  padding-top: $offset-single;
+  padding-bottom: $offset-single;
 
   text-align: center;
   text-transform: uppercase;
+
+  @include container-fluid();
 }
 
 .booking__title {
@@ -14,6 +17,7 @@
 }
 
 .booking__details {
+  max-width: 458px;
   margin: $offset-double auto;
 
   line-height: 24px;
@@ -21,6 +25,7 @@
 
 .booking__button {
   width: 100%;
+  max-width: 458px;
   margin: 0 0 $offset-single 0;
 
   @include button-styles();
@@ -29,10 +34,5 @@
 @media (min-width: 768px) {
   .booking__title {
     font-size: 30px;
-  }
-
-  .booking__details,
-  .booking__button {
-    width: 458px;
   }
 }

@@ -1,8 +1,11 @@
 .caption {
-  padding: 44px $offset-single 34px $offset-single;
+  padding-top: 42px;
+  padding-bottom: 34px;
 
   text-align: center;
   text-transform: uppercase;
+
+  @include container-fluid();
 }
 
 .caption__title {
@@ -12,11 +15,23 @@
 }
 
 .caption__desc {
+  max-width: 435px;
+  margin: 0 auto;
+
   line-height: 24px;
 }
 
 @media (min-width: 768px) {
+  .caption {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
   .caption__title {
     font-size: $text-size-medium;
+
+    &--big {
+      font-size: $text-size-huge;
+    }
   }
 }

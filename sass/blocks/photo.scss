@@ -3,6 +3,8 @@
 
   border-top: 1px solid $color-light-grey;
 
+  @include container-fluid();
+
   img {
     display: block;
 
@@ -48,25 +50,58 @@
   .photo {
     position: relative;
 
-    float: left;
-
     width: 50%;
     padding: 0;
 
     border: 0;
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
 
     &:first-child {
       width: 100%;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    &:nth-child(2n+3) {
+      background-color: #eaeaea;
     }
   }
 
   .photo__img {
     margin: 0;
+
+    img {
+      height: 270px;
+    }
+  }
+
+  .photo__info {
+    display: flex;
+
+    box-sizing: border-box;
+    padding: $offset-single;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo__title {
+    margin-top: 0;
+  }
+
+  .photo__author {
+    margin: 0;
   }
 }
 
 @media (min-width: 1200px) {
+  .photo {
+    width: 33.3%;
+    padding: 0;
+  }
+
   .photo__info {
     position: absolute;
     bottom: 0;

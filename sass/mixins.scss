@@ -11,8 +11,9 @@
 }
 
 @mixin socials-link-bg($name) {
-  background: url("/img/icon-#{$name}.svg") no-repeat 50% 50%;
   text-indent: -9999px;
+
+  background: url("/img/icon-#{$name}.svg") no-repeat 50% 50%;
 }
 
 @mixin reason-img($type) {
@@ -39,4 +40,19 @@
   font-size: $text-size-big;
   font-weight: bold;
   line-height: 58px;
+}
+
+@mixin container-fluid() {
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+
+  @media (min-width: 768px) {
+    padding-right: 7.8125%;
+    padding-left: 7.8125%;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 }

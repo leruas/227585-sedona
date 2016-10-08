@@ -1,5 +1,14 @@
 @media (min-width: 768px) {
   .gallery {
-    overflow: hidden;
+    display: flex;
+
+    flex-wrap: wrap;
+    @include container-fluid();
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    padding: 0;
   }
 }

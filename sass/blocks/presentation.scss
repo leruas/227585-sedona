@@ -1,5 +1,7 @@
 .presentation {
   border-top: 1px solid $color-light-grey;
+
+  @include container-fluid();
 }
 
 .presentation__intro {
@@ -16,5 +18,13 @@
 @media (min-width: 768px) {
   .presentation {
     border: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .presentation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -1,26 +1,44 @@
-.reason__header {
-  display: block;
+.reason {
+  background-color: $color-light-grey;
 
-  width: 100%; // TODO: что бы изменить ширину нижнего бордера нужно этому блоку выставить ширину 280пкс
+  &--featured {
+    background: $color-blue;
+
+    .reason__header {
+      color: $color-white;
+      border: 0;
+    }
+  }
+
+  &:last-child .reason__header {
+    border: 0;
+  }
+}
+
+.reason__header {
+  display: flex;
+  flex-direction: column;
+
+  width: 87.5%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: $offset-double 0;
 
   text-align: center;
   text-transform: uppercase;
 
   border-bottom: 1px solid $color-medium-grey;
-  background-color: $color-light-grey;
 
   font-size: $text-size-small;
-}
 
-.reason__header--featured {
-  color: $color-white;
-  background: $color-blue;
+  justify-content: center;
+
+  .reasons__item:first-child & {
+    padding-top: 50px;
+  }
 }
 
 .reason__title {
-  margin: 0 auto $offset-single auto;
+  margin: 0 0 $offset-single 0;
 }
 
 .reason__number {
@@ -28,7 +46,7 @@
 }
 
 .reason__desc {
-  margin: 0 auto $offset-double auto;
+  line-height: 21px;
 }
 
 .reason__img {
@@ -40,33 +58,44 @@
 }
 
 .reason__details {
-  width: 260px;
+  background-color: $color-white;
 
   @include drop-list-style();
 }
 
 @media (min-width: 768px) {
+  .reason {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    &--featured .reason__header {
+      width: 35%;
+    }
+  }
+
+  .reason:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
   .reason__header {
     box-sizing: border-box;
     height: 256px;
+    padding: 0 53px;
 
     border: 0;
-  }
 
-  .reason__header--featured {
-    float: left;
-
-    width: 35%;
+    .reasons__item:first-child & {
+      padding-top: 0;
+    }
   }
 
   .reason__img {
-    float: left;
-
     width: 65%;
     height: 256px;
   }
 
-  .reason__details {
-    height: 256px;
+  .reason__desc {
+    margin: 0;
   }
 }
