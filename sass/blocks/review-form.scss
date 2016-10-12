@@ -5,6 +5,18 @@
   border: 0;
   border-top: 1px solid $color-light-grey;
 
+  &--introduce {
+    .review-form__input-group {
+      display: flex;
+
+      align-items: center;
+
+      .review-form__input-text {
+        flex-grow: 2;
+      }
+    }
+  }
+
   &--contacts {
     .review-form__label {
       display: inline-block;
@@ -29,96 +41,96 @@
 
 .review-form__input-group {
   margin: $offset-single 0 $offset-half 0;
+}
 
-  .review-form__input-text,
-  .review-form__input-tel,
-  .review-form__input-email,
-  .review-form__textarea {
-    padding: 20px $offset-single;
+.review-form__input-text,
+.review-form__input-tel,
+.review-form__input-email,
+.review-form__textarea {
+  padding: 20px $offset-single;
 
-    color: $color-black;
-    border: none;
-    outline: 0;
-    background: $color-light-grey;
+  color: $color-black;
+  border: none;
+  outline: 0;
+  background: $color-light-grey;
+
+  font-size: $text-size-medium;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    padding: 16px;
+
+    border: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+}
+
+.review-form__input-tel,
+.review-form__input-email {
+  box-sizing: border-box;
+  width: calc(100% - 60px);
+
+  vertical-align: middle;
+}
+
+.review-form__input-checkbox,
+.review-form__input-radio {
+  display: none;
+
+  + .review-form__label {
+    text-transform: none;
 
     font-size: $text-size-medium;
     font-weight: bold;
 
-    &:hover {
-      background-color: #e5e5e5;
-    }
+    &::before {
+      display: inline-block;
 
-    &:active {
-      padding: 16px;
+      width: 55px;
+      height: 55px;
+      margin-right: $offset-single;
 
-      border: 4px solid #e5e5e5;
-      background-color: #ffffff;
-    }
-  }
+      content: "";
+      vertical-align: middle;
 
-  .review-form__input-tel,
-  .review-form__input-email {
-    box-sizing: border-box;
-    width: calc(100% - 60px);
-
-    vertical-align: middle;
-  }
-
-  .review-form__input-checkbox,
-  .review-form__input-radio {
-    display: none;
-
-    + .review-form__label {
-      text-transform: none;
-
-      font-size: $text-size-medium;
-      font-weight: bold;
-
-      &::before {
-        display: inline-block;
-
-        width: 55px;
-        height: 55px;
-        margin-right: $offset-single;
-
-        content: "";
-        vertical-align: middle;
-
-        background-color: $color-light-grey;
-      }
-    }
-  }
-
-  .review-form__input-checkbox {
-    & + .review-form__label::before {
-      border-radius: 5px;
-    }
-
-    &:checked + .review-form__label::before {
-      background: url("/img/icons/icon-tick.svg") no-repeat 50% 50%;
       background-color: $color-light-grey;
     }
   }
+}
 
-  .review-form__input-radio {
-    & + .review-form__label::before {
-      border-radius: 50%;
-    }
-
-    &:checked + .review-form__label::before {
-      width: 15px;
-      height: 15px;
-
-      border: 20px solid $color-light-grey;
-      background-color: $color-dark-grey;
-    }
+.review-form__input-checkbox {
+  & + .review-form__label::before {
+    border-radius: 5px;
   }
 
-  .review-form__textarea {
-    box-sizing: border-box;
-    width: 100%;
-    height: 160px;
+  &:checked + .review-form__label::before {
+    background: url("/img/icons/icon-tick.svg") no-repeat 50% 50%;
+    background-color: $color-light-grey;
   }
+}
+
+.review-form__input-radio {
+  & + .review-form__label::before {
+    border-radius: 50%;
+  }
+
+  &:checked + .review-form__label::before {
+    width: 15px;
+    height: 15px;
+
+    border: 20px solid $color-light-grey;
+    background-color: $color-dark-grey;
+  }
+}
+
+.review-form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 160px;
 }
 
 .review-form__label {
@@ -138,11 +150,11 @@
   vertical-align: middle;
 
   &--phone {
-    background: #e6e6e6 url('/img/icons/icon-phone.svg') no-repeat 50% 50%;
+    background: #e6e6e6 url("/img/icons/icon-phone.svg") no-repeat 50% 50%;
   }
 
   &--email {
-    background: #e6e6e6 url('/img/icons/icon-mail.svg') no-repeat 50% 50%;
+    background: #e6e6e6 url("/img/icons/icon-mail.svg") no-repeat 50% 50%;
   }
 }
 
@@ -176,8 +188,8 @@
     padding: $offset-double 0;
 
     &--introduce {
-      width: 50%;
-      margin: 0;
+      width: calc(50% - 20px);
+      margin: 0 0 0 20px;
 
       border: 0;
 
@@ -319,7 +331,8 @@
     padding: 27px 0;
 
     &--introduce {
-      margin: 0;
+      width: calc(50% - 20px);
+      margin: 0 0 0 20px;
 
       .review-form__input-group {
         margin-right: 120px;

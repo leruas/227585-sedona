@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>document.createElement("picture")</script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -35,7 +37,7 @@
             <picture>
               <source media="(min-width:1200px)" srcset="/img/logo-sedona-desktop.svg">
               <source media="(min-width:768px)" srcset="/img/logo-sedona-tablet.svg">
-              <img src="/img/logo-sedona-mobile.svg" class="header__logo-image">
+              <img src="/img/logo-sedona-mobile.svg" class="header__logo-image" alt="Sedona">
             </picture>
             <button class="header__menu-button header__menu-button--hamburger"></button>
           </div>
@@ -181,12 +183,13 @@
 
     </div>
 
+    <script src="js/common.js"></script>
     <script>
       var map;
       function initMap() {
         var myLatLng = { lat: 34.872684, lng: -111.759262 };
 
-        map = new google.maps.Map(document.getElementById('map__area'), {
+        map = new google.maps.Map(document.getElementById("map__area"), {
           center: myLatLng,
           zoom: 7,
           disableDefaultUI: true,
@@ -198,30 +201,6 @@
           map: map
         });
       }
-
-      var navBlock = document.querySelector('.page-nav__items');
-      var navToggle = document.querySelector('.header__menu-button');
-      var closeNav = function () {
-        navBlock.classList.remove('page-nav__items--opened');
-        navBlock.classList.add('page-nav__items--closed');
-        navToggle.classList.remove('header__menu-button--cross');
-        navToggle.classList.add('header__menu-button--hamburger');
-      }
-      var openNav = function () {
-        navBlock.classList.remove('page-nav__items--closed');
-        navBlock.classList.add('page-nav__items--opened');
-        navToggle.classList.remove('header__menu-button--hamburger');
-        navToggle.classList.add('header__menu-button--cross');
-      }
-
-      closeNav();
-      navToggle.addEventListener('click', function() {
-        if (navBlock.classList.contains('page-nav__items--closed')) {
-          openNav();
-        } else {
-          closeNav();
-        }
-      });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNnXSKGZGvq6buL1rLIxNCdcAF_ltM-qI&callback=initMap" async defer></script>
   </body>

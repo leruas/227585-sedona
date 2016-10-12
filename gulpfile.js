@@ -77,7 +77,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**/*.{jpg,png,gif,svg}",
-    // "js/**",
+    "js/**",
     "*.html"
   ], {
     base: "."

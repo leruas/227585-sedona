@@ -1,6 +1,4 @@
 .header__panel {
-  position: relative;
-
   height: 55px;
 
   text-align: right;
@@ -32,7 +30,12 @@
   &--hamburger {
     background-image: url("/img/icons/icon-menu.svg");
   }
+
   &--cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     background-image: url("/img/icons/icon-cross.svg");
   }
 }
