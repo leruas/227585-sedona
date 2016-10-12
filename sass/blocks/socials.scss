@@ -9,8 +9,13 @@
 
   width: 46px;
   height: 48px;
+  margin-right: 3px;
 
   background-color: $color-blue;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .socials__link {

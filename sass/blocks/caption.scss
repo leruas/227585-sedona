@@ -1,6 +1,12 @@
 .caption {
-  padding-top: 42px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 44px;
+  &--photo {
+    padding-bottom: 26px;
+  }
+  &--form {
+    padding-bottom: 14px;
+  }
 
   text-align: center;
   text-transform: uppercase;
@@ -9,29 +15,58 @@
 }
 
 .caption__title {
-  margin: 0 0 $offset-double 0;
+  width: 95%;
+  margin: 8px auto 18px auto;
 
   font-size: $text-size-medium;
+  line-height: 26px;
+
+  &--big {
+    line-height: 30px;
+  }
 }
 
 .caption__desc {
-  max-width: 435px;
   margin: 0 auto;
 
-  line-height: 24px;
+  line-height: 25px;
 }
 
 @media (min-width: 768px) {
   .caption {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding: 0;
+
+    .caption__title {
+      margin-top: 51px;
+      margin-bottom: 28px;
+
+      font-size: $text-size-big;
+
+      &--big {
+        font-size: $text-size-huge;
+      }
+    }
+
+    &--photo, &--form {
+      padding-bottom: 15px;
+
+      .caption__title {
+        margin-top: 77px;
+      }
+    }
   }
 
-  .caption__title {
-    font-size: $text-size-medium;
+  .presentation .caption {
+    padding: 3px 0 73px 0;
+  }
+}
 
-    &--big {
-      font-size: $text-size-huge;
+@media (min-width: 1200px) {
+  .caption {
+    &--photo, &--form {
+      .caption__title {
+        margin-top: 116px;
+      }
     }
   }
 }

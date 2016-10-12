@@ -1,9 +1,12 @@
 .footer {
+  padding: 40px 0 20px 0;
+
   text-align: center;
+  box-sizing: border-box;
 }
 
 .footer__title {
-  margin: $offset-double;
+  margin: 43px 0 36px 0;
 
   text-align: center;
   text-transform: uppercase;
@@ -14,7 +17,7 @@
 .footer__copyright {
   display: inline-block;
 
-  margin: $offset-double auto;
+  margin: $offset-double auto 0 auto;
 
   text-align: left;
   text-decoration: none;
@@ -28,10 +31,12 @@
 .footer__academy-logo {
   display: inline-block;
 
-  width: 35px;
+  width: 33px;
   height: 35px;
+  margin-left: 7px;
 
   text-indent: -9999px;
+  font-size: 0;
 
   background: url("/img/logo-htmlacademy.svg") no-repeat 50% 50%;
 }
@@ -47,6 +52,21 @@
   .footer__title,
   .footer__socials,
   .footer__copyright {
-    margin: $offset-double 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__title,
+  .footer__socials,
+  .footer__copyright {
+    width: 33.3%;
+  }
+
+  .footer__copyright {
+    box-sizing: border-box;
+    padding-right: 41px;
+
+    text-align: right;
   }
 }
